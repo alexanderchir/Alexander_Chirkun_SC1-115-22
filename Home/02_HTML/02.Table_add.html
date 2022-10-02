@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table_base</title>
+    <style>
+        .layer1 {
+            background-color: white;
+        }
+        .layer2 {
+            margin-left: 10%; margin-right: 10%;
+        } 
+    </style>
+    <style type="text/css">
+        TABLE {
+         width: 40%; /* Ширина таблицы */
+        }
+        #col1 {
+            width: 10%; /* Ширина первой колонки */
+            background: rgb(218, 204, 204); /* Цвет фона первой колонки */
+            text-align: center; /* Выравнивание по центру */
+        }
+        #col2 {
+            width: 10%; /* Ширина второй колонки */
+            text-align: center; /* Выравнивание по центру */
+        }
+        #col3 {
+            width: 10%; /* Ширина третей колонки */
+            text-align: center; /* Выравнивание по центру */
+        }
+        #col4 {
+            width: 10%; /* Ширина четвёртой колонки */
+            text-align: center; /* Выравнивание по центру */
+        }
+        #col5 {
+            width: 10%; /* Ширина пятой колонки */
+            text-align: center; /* Выравнивание по центру */
+        }
+        #col6 {
+            width: 10%; /* Ширина шестой колонки */
+            text-align: center; /* Выравнивание по центру */
+        }
+        #coladd {
+            width: 10%; /* Ширина шестой колонки */
+            text-align: center; /* Выравнивание по центру */
+            background: rgb(29, 211, 38); /* Цвет фона дополнительной колонки */
+        }
+        #col1, #col2, #col3, #col4, #col5, #col6 {
+         vertical-align: center; /* Выравнивание по верхнему центру */
+         padding: 2px; /* Поля вокруг содержимого ячеек */
+        }
+       </style>
+</head>
+<body>
+    <table border="1" width="40%" cellpadding="3" align="center">
+        <caption align="center">Месяц моего дня рождения</caption>
+        <tr>
+            <th colspan="6"><b>Ноябрь</b></th>
+        </tr>
+        <tr>
+            <th id="col1"><b>Пн</b></th>
+            <th id="col2"></th>
+            <th id="col3"><font color="red">7</font></th>
+            <th id="col4">14</th>
+            <th id="col5">21</th>
+            <th id="col6">28</th>
+        </tr>
+        <tr>
+            <th id="col1"><b>Вт</b></th>
+            <th id="col2">1</th>
+            <th id="col3">8</th>
+            <th id="col4">15</th>
+            <th id="col5">22</th>
+            <th id="col6">29</th>
+        </tr>
+        <tr>
+            <th id="col1"><b>Ср</b></th>
+            <th id="col2">2</th>
+            <th id="col3">9</th>
+            <th id="coladd"><b>16</b></th>
+            <th id="col5">23</th>
+            <th id="col6">30</th>
+        </tr>
+        <tr>
+            <th id="col1"><b>Чт</b></th>
+            <th id="col2">3</th>
+            <th id="col3">10</th>
+            <th id="col4">17</th>
+            <th id="col5">24</th>
+            <th id="col6"></th>
+        </tr>
+        <tr>
+            <th id="col1"><b>Пт</b></th>
+            <th id="col2">4</th>
+            <th id="col3">11</th>
+            <th id="col4">18</th>
+            <th id="col5">25</th>
+            <th id="col6"></th>
+        </tr>
+        <tr>
+            <th id="col1"><font color="red"><b>Сб</b></font></th>
+            <th id="col2"><font color="red">5</font></th>
+            <th id="col3"><font color="red">12</font></th>
+            <th id="col4"><font color="red">19</font></th>
+            <th id="col5"><font color="red">26</font></th>
+            <th id="col6"></th>
+        </tr>
+        <tr>
+            <th id="col1"><font color="red"><b>Вс</b></font></th>
+            <th id="col2"><font color="red">6</font></th>
+            <th id="col3"><font color="red">13</font></th>
+            <th id="col4"><font color="red">20</font></th>
+            <th id="col5"><font color="red">27</font></th>
+            <th id="col6"></th>
+        </tr>
+    </table>
+</body>
+</html>
