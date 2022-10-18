@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашнее задание - 1.5</title>
+    <style>
+        .layer1 {
+            background-color: white;
+        }
+        .layer2 {
+            margin-left: 5%; margin-right: 5%;
+        } 
+    </style>
+</head>
+<body>
+    <div class="layer1">
+        <div class="layer2">
+                    <H1 align="center">Заполните анкету</H1>
+                        <form id="1_form" name="ID" method="post" action="http://fe.it-academy.by/TestForm.php">
+                            <fieldset>
+                                <legend>Личные данные</legend>                                
+                                    <input 
+                                        type="text1.1" 
+                                        id="text_1.1" 
+                                        pattern="^[А-Я][А-Яа-я]{1.25}"
+                                        placeholder="Фамилия" 
+                                        required placeholder="Фамилия" 
+                                        autofocus required placeholder="Фамилия"> text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле <br>  
+                                        <input 
+                                        type="text1.2" 
+                                        id="text_1.2" 
+                                        pattern="^[А-Я][А-Яа-я]{1.20}"
+                                        placeholder="Имя" 
+                                        required placeholder="Имя"> text: Только кириллица, без пробелов, длина поля 25, обязательное поле <br>
+                                        <input 
+                                        type="text1.3" 
+                                        id="text_1.3" 
+                                        pattern="^[А-Я][А-Яа-я]{1.24}"
+                                        placeholder="Отчество"
+                                        required placeholder="Отчество"> text: Только кириллица, без пробелов, длина поля 25, обязательное поле <br>
+                                        <form id="1.1_form" name="number" method="post" action="http://fe.it-academy.by/TestForm.php">
+                                            <fieldset>
+                                                <legend>Паспортные данные</legend>
+                                                text: Серия - только заглавные две латинские буквы длинной 2 и максимальным количеством символов 2, количество букв не менее 2, обязательное поле <br>
+                                                text: Номер паспорта - только цифры с длинной 7 и максимальным количеством символов 7, количество цифр не менее 7, обязательное поле <br>
+                                                <input 
+                                                type="text1.1.1"
+                                                id="text_1.1.1"
+                                                maxlength="2"
+                                                pattern="^[А-Я]{2,2}"
+                                                placeholder="XX"
+                                                required placeholder="XX">
+                                                <input 
+                                                type="text1.1.2"
+                                                id="text_1.1.2"
+                                                maxlength="7"
+                                                pattern="^[0-9]{7,7}"
+                                                placeholder="XXXXXXX"
+                                                required placeholder="XXXXXXX">
+                                            </fieldset>
+                                        </form>
+                                        <form id="1.2_form" name="date" method="post" action="http://fe.it-academy.by/TestForm.php">
+                                            <fieldset>
+                                                <legend>Дата рождения</legend>
+                                                <input type="text1.2.1"
+                                                id="text_1.2.1"
+                                                maxlength="4"
+                                                pattern="^[1|2][0-9]{1,4}"> text: Год рождения 4-е цифры <br>
+                                                <select name="month" size="1"> 
+                                                        <option value="2">Январь</option>    
+                                                        <option value="3">Февраль</option>
+                                                        <option value="4">Март</option>
+                                                        <option value="5">Апрель</option>
+                                                        <option value="6">Май</option>
+                                                        <option value="7">Июнь</option>
+                                                        <option value="8">Июль</option>
+                                                        <option value="9">Август</option>
+                                                        <option value="10">Сентябрь</option>
+                                                        <option value="11">Октябрь</option>
+                                                        <option value="12">Ноябрь</option>
+                                                        <option value="13">Декабрь</option>
+                                                </select> select: Месяц рождения <br>
+                                                <input 
+                                                type="number"                                        
+                                                maxlength="2"
+                                                pattern="^[1-9]{1}$|^[1-4]{1}[0-9]{1}$|^31$"> number: Диапазон от 1 до 31 с шагом 1> <br>                                                                                       
+                                            </fieldset>
+                                        </form>
+                                <select name="nation" size="1" required placeholder="nation"> 
+                                    <option value="1">РБ</option>    
+                                    <option value="2">Украина</option>
+                                    <option value="3">Россия</option>
+                                </select> (Национальность - выбор одного значения из списка, обязательное поле) <br>
+                                Адрес: <br>
+                                <textarea name="text_area" lang="ru" required placeholder="Form">                               
+                               </textarea> <br>
+                            </fieldset>
+                        </form>
+                        <form id="2_form" name="interests" method="post" action="http://fe.it-academy.by/TestForm.php">
+                            <fieldset>
+                                <legend>Интересы</legend>
+                                    <form id="2.1_form" name="voite" method="post" action="http://fe.it-academy.by/TestForm.php">
+                                        <fieldset>
+                                            <legend>Хобби</legend>
+                                            <input type="checkbox" name="1.1"> Рыбалка <br>
+                                            <input type="checkbox" name="1.2"> Астрономия <br>  
+                                            <input type="checkbox" name="1.3"> Дайвинг <br>  
+                                            <input type="checkbox" name="1.4"> Марки <br>
+                                        </fieldset>
+                                    </form>
+                                    <form id="2.2_form" name="check" method="post" action="http://fe.it-academy.by/TestForm.php">
+                                        <fieldset>
+                                            <legend>Домашние животные</legend>
+                                            <select name="form_2.2[]" size="6" multiple id="form_2.2"><!--Выбор нескольких не выходит-->                                                                            
+                                                <optgroup label="Птицы"></label> 
+                                                    <option value="1">Попугай</option>    
+                                                    <option value="2">Аист</option>
+                                                    <option value="3">Сова</option>
+                                                </optgroup>
+                                                <optgroup label="Рыбка">
+                                                    <option value="4">Окунь</option>
+                                                    <option value="5">Осётр</option>
+                                                    <option value="6">Карась</option>
+                                                </optgroup>
+                                                <optgroup label="Животные">
+                                                    <option value="7">Кошка</option>
+                                                    <option value="8">Собака</option>
+                                                    <option value="9">Хомяк</option>
+                                                    </optgroup>
+                                                </select>
+                                        </fieldset>
+                                    </form>
+                                    <form id="2.3_form" name="enter" method="post" action="http://fe.it-academy.by/TestForm.php">
+                                        <fieldset>
+                                            <legend>Данные для входа и востановления пароля</legend>
+                                            <input type="text"
+                                            placeholder="Логин"
+                                            required placeholder="Логин"
+                                            maxlength="20"
+                                            pattern="^([A-Za-z]{5.}\S)"> text <br>
+                                            <input type="password"
+                                            placeholder="Пароль"
+                                            required placeholder="Пароль"
+                                            maxlength="20"
+                                            autocomplete="off"
+                                            pattern="^([A-Za-z]{10.}\S)"> password <br>
+                                        </fieldset>
+                                    </form>
+                                    <form id="2.4_form" name="mail" method="post" action="http://fe.it-academy.by/TestForm.php">
+                                        <fieldset>
+                                            <legend>Координаты</legend>
+                                            <input type="email"
+                                            placeholder="Введите адрес почты"
+                                            required placeholder="Введите адрес почты"><br> 
+                                            <input type="url"
+                                            placeholder="Введите адрес сайта"
+                                            required placeholder="Введите адрес сайта"><br>
+                                        </fieldset>
+                                    </form>   
+                                    <form id="2.5_form" name="number" method="post" action="http://fe.it-academy.by/TestForm.php">
+                                        <fieldset>
+                                            <legend>цифры</legend>
+                                            <input type="number"
+                                            name="t" 
+                                            min="-2.5" 
+                                            max="2.5" 
+                                            step="0.1"><br> 
+                                            <input type="range"
+                                            name="t" 
+                                            value="5"
+                                            min="0" 
+                                            max="10" 
+                                            step="0.1"><br><br>
+                                        </fieldset>
+                                    </form>
+                                    <form id="2.6_form" name="button" method="post" action="http://fe.it-academy.by/TestForm.php">
+                                        <fieldset>
+                                            <legend>Кнопки</legend>
+                                            <button type="submit" style="text-align: center">Отправить</button>
+                                            <button type="reset" style="text-align: center">Сброс</button> <br>
+                                            <button type="button"><img src="data:image/jpeg;base64,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" alt="nothing"></button> <br>
+                                        </fieldset>
+                                    </form>
+                            </fieldset>
+                        </form>    
+                    </div>
+                </div>    
+            </body>
+            </html>                    
